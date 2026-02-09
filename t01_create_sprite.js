@@ -8,17 +8,17 @@
 // setup()
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
-cnv= new Canvas(w,h);
-Rectangle = new Sprite(x,y,w,h);
-Rectangle.colour = 'ccc';
+console.log("setup: ");
+cnv = new Canvas(2, 2);
+Rectangle = new Sprite(2,2,2,2);
+Rectangle.colour = '#0000FF';
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-background('ccc')
+background('#0000FF')
 }
 
 /*******************************************************/
