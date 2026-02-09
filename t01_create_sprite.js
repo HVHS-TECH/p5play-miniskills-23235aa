@@ -9,8 +9,8 @@
 /*******************************************************/
 function setup() {
 console.log("setup: ");
-cnv = new Canvas(2, 2);
-Rectangle = new Sprite(2,2,2,2);
+cnv = new Canvas(200, 200);
+Rectangle = new Sprite(200,200,200,200);
 Rectangle.colour = '#0000FF';
 }
 	
