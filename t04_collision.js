@@ -14,8 +14,11 @@ Rectangle = new Sprite(200,200,200,200,'d');
 Rectangle.colour = '#0000FF';
 Rectangle.rotationSpeed = 2;
 Rectangle.vel.x=2;
+Rectangle.bounciness=0.8;
+Rectangle.friction =10;
 world.gravity.y=10;
-platform_1 = new Sprite(500,300,300,400,'k');
+platform_1 = new Sprite(500,600,500,50,'k');
+platform_2 = new Sprite(200,800,200,20,'k');
 }
 	
 /*******************************************************/
