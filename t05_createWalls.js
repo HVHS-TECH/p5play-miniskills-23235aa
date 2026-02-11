@@ -11,19 +11,18 @@ function setup() {
 	console.log("setup: ");
 console.log("setup: ");
 cnv= new Canvas(1000,1000);
-wallLH  = new Sprite(0, 800/2, 8, 800, 'k');
+wallLH  = new Sprite(0, 1000/2, 8, 1000, 'k');
 wallLH.color = 'black';
-wallRH  = new Sprite(1000, 800/2, 5, 800, 'k');
+wallRH  = new Sprite(1000, 1000/2, 5, 1000, 'k');
 wallRH.color = 'blue';
-wallTop = new Sprite(200, 800/2, 0, 800, 'k');
-wallTop.color = 'red';
-wallBot = new Sprite(500, 400, 200, 100, 'k');
-ball_1 = new Sprite(100/2, 200/2, 50, 'd');
+platform_1 = new Sprite(500,1000,1000,50,'k');
+wallTop = new Sprite(500, 10, 1000, 50, 'k');
+ball_1 = new Sprite(100/2, 1000/2, 50, 'd');
 ball_1.color = 'cyan';
-ball_1.vel.x = 2;
-ball_1.bounciness = 1;
-ball_1.friction = 0;
-ball_1.drag = 0;
+ball_1.vel.x = 70;
+ball_1.bounciness = 5;
+ball_1.friction = 20;
+ball_1.drag = 1;
 }
 	
 /*******************************************************/
