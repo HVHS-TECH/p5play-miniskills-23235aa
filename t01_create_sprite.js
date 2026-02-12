@@ -9,16 +9,28 @@
 /*******************************************************/
 function setup() {
 console.log("setup: ");
-cnv = new Canvas(200, 200);
-Rectangle = new Sprite(200,200,200,200);
-Rectangle.colour = '#0000FF';
+width = random(300,600);
+height = random(300,600);
+
+
+cnv = new Canvas(width, height);
+red = new Sprite(0, 0 ,100,100);
+red.color = 'red';
+green = new Sprite( width, 0 ,  100,100);
+green.color = 'green';
+blue = new Sprite( width, height ,  100,100);
+blue.color = 'blue';
+yellow = new Sprite( 0, height ,  100,100);
+yellow.color = 'yellow';
+purple = new Sprite( width/2, height/2 ,  100,100);
+purple.color = 'purple';
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-background('#0000FF')
+background('#ffffff')
 }
 
 /*******************************************************/
