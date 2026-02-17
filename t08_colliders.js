@@ -26,14 +26,15 @@ ball_1.friction = 20;
 ball_1.drag = 1;
 for (i = 0; i < 10; i++) {
   alien = new Sprite(100,200,40,70,'d');
-  alien.vel.x = randNum = random(10, 200);
-  alien.vel.y = randNum = random(-2,20);
+  alien.vel.x =  random(10, 200);
+  alien.vel.y = random(-2,20);
   alien.bounciness = 1;
   alien.friction = 0;
-  alienGroup.collides(ball_1, func2Call);
-  function func2Call(_alien, _ball_1){
-	_alien.remove();
+  alienGroup.add(alien);
 }
+ alienGroup.collides(ball_1, func2Call);
+function func2Call(_alien, _ball_1){
+	_alien.remove();
 }
 }
 
